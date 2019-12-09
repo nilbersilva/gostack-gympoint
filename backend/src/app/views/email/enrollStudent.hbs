@@ -1,0 +1,30 @@
+<style>
+  th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+</style>
+<strong>Olá, {{ student }}</strong>
+<p>Parabéns pela sua matrícula na <strong>Gympoint!</strong></p>
+<p>Seguem abaixo informações do plano escolhido.</p>
+<p>
+<table style="width:100%; border-collapse: collapse;">
+  <tr>
+    <th style="padding-top: 12px; padding-bottom: 12px; text-align: left; background-color: #005A9C; color: white;">Plano:</th>
+    <td>{{ title }}</td>
+  </tr>
+  <tr>
+    <th style="padding-top: 12px; padding-bottom: 12px; text-align: left; background-color: #005A9C; color: white;">Data de início:</th>
+    <td>{{ start_date }}</td>
+  </tr>
+  <tr>
+    <th style="padding-top: 12px; padding-bottom: 12px; text-align: left; background-color: #005A9C; color: white;">Data de término:</th>
+    <td>{{ end_date }}</td>
+  </tr>
+    <tr>
+    <th style="padding-top: 12px; padding-bottom: 12px; text-align: left; background-color: #005A9C; color: white;">Preço:</th>
+    <td>{{ price }}</td>
+  </tr>
+</table>
+  <p>Restou alguma dúvida? Entre em contato connosco lá no <strong>Gympoint!</strong></p>
+</p>

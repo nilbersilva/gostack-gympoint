@@ -1,0 +1,22 @@
+<style>
+  .pHeader {
+    padding: 10px 5px;
+    font-weight: bold;
+    background: #005A9C;
+    color: #fff;
+  }
+  .pAnswer {
+    color: #000;
+    padding: 10px 5px;
+  }
+</style>
+<strong>Olá, {{ student }}</strong>
+<p>Sua pergunta foi respondida pelo nosso colaborador: <b>{{ user }}</b> </p>
+<p>Segue abaixo a resposta.</p>
+<div style="display:flex; flex-direction:column;background:#fff;">
+  <span class="pHeader">Pergunta</span>
+  <span class="pAnswer">{{ question }}</span>
+  <span class="pHeader">Resposta</span>
+  <span class="pAnswer">{{ answer }}</span>
+</div>
+ <p>Restou alguma dúvida? Entre em contato connosco lá no <strong>Gympoint!</strong></p>
