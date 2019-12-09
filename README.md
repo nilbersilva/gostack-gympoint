@@ -9,6 +9,7 @@ GymPoint - Aplicação construída para o GoStack Bootcamp desafio final. :rocke
 A Aplicação é composta por 3 projetos, back-end, web e mobile para controle e interação entre uma academia e seus alunos.
 
 É possível realizar login, matrículas, planos e pedidos de auxílio.
+Notificações por email a cada matrícula e resposta ao pedido de auxílio.
 
 
 ## **Começando**
