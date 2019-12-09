@@ -45,6 +45,8 @@ Clone this repository with:
 ```git
 git clone https://github.com/nilbersilva/gostack-gympoint
 ```
+
+
 ## **Backend**
 Clonar arquivo .env.example para .env e alterar arquivo conforme necessário.
 
@@ -57,6 +59,10 @@ yarn sequelize db:seed:all
 yarn queue
 yarn dev
 ```
+
+**URL Api**
+
+No projeto Frontend e Mobile será necessário informar o URL da API em /src/services/api.js no baseURL
 
 ## **Frontend**
 Instalar suas dependências e iniciar serviço
