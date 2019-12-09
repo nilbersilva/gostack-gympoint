@@ -76,8 +76,7 @@ yarn android
 ```
 
 ## Construido com
-**Backend**: 
-* [Node.JS](https://nodejs.org/en/)
+* [Node.JS](https://nodejs.org/en/) - utilizado no Backend
 * [Express](https://expressjs.com/)
 * [Sequelize](https://sequelize.org/)
 * [dotenv](https://github.com/motdotla/dotenv#readme)
@@ -86,11 +85,6 @@ yarn android
 * [Node Mailer](https://nodemailer.com/about/)
 * [Bee Queue](https://bee-queue.com/)
 * [bcrypt](https://github.com/dcodeIO/bcrypt.js/)
-
 * [express-handlebars](https://github.com/ericf/express-handlebars)
-
-**Frontend**:
-* [ReactJS](https://pt-br.reactjs.org/)
-
-**Mobile** (Apenas Android):
-* [React Native](https://facebook.github.io/react-native/)
+* [ReactJS](https://pt-br.reactjs.org/) - utilizado no Frontend
+* [React Native](https://facebook.github.io/react-native/) - utilizado no Mobile
