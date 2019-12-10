@@ -37,9 +37,7 @@ Banco de Dados MongoDB
 ```docker
 docker run --name some-mongo -p 27017:27017 -d mongo
 ```
-### **Clone repository**
-
-Clone this repository with:
+### **Clonar repositório**
 
 **GIT**
 ```git
@@ -50,7 +48,7 @@ git clone https://github.com/nilbersilva/gostack-gympoint
 ## **Backend**
 Clonar arquivo .env.example para .env e alterar arquivo conforme necessário.
 
-Instalar suas dependências, migrations, seeds do banco de dados e iniciar serviço e de Nodemailer
+Instalar suas dependências, migrations, seeds do banco de dados e iniciar api e serviço bee-queue
 ```js
 cd backend
 yarn
