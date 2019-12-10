@@ -16,7 +16,7 @@ import {
   deleteStudentFailure,
 } from './actions';
 
-export function* loadStudents({ payload, ...rest }) {
+export function* loadStudents({ payload }) {
   const { search, page = 1, id, loadEndCallBack } = payload;
   try {
     let response = null;
