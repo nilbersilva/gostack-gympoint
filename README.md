@@ -37,9 +37,7 @@ Banco de Dados MongoDB
 ```docker
 docker run --name some-mongo -p 27017:27017 -d mongo
 ```
-### **Clone repository**
-
-Clone this repository with:
+### **Clonar repositório**
 
 **GIT**
 ```git
