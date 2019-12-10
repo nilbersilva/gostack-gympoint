@@ -1,6 +1,7 @@
 import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
+import helmet from 'helmet';
 import path from 'path';
 import routes from './routes';
 import './database';
@@ -13,6 +14,7 @@ class App {
   }
 
   middlewares() {
+    this.server.use(helmet());
     this.server.use(cors());
     this.server.use(express.json());
     this.server.use(

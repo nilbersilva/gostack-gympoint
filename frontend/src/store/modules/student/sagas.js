@@ -16,7 +16,7 @@ import {
   deleteStudentFailure,
 } from './actions';
 
-export function* loadStudents({ payload }) {
+export function* loadStudents({ payload, ...rest }) {
   const { search, page = 1, id, loadEndCallBack } = payload;
   try {
     let response = null;
@@ -44,6 +44,7 @@ export function* loadStudents({ payload }) {
   } catch (error) {
     yield put(loadStudentsFailure());
     TrataErr(error, 'Erro ao Carregar alunos');
+
   } finally {
     if (loadEndCallBack) loadEndCallBack();
   }

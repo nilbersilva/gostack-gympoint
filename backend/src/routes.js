@@ -1,4 +1,6 @@
 import { Router } from 'express';
+import Brute from 'express-brute';
+import BruteRedis from 'express-brute-redis';
 import multer from 'multer';
 import multerConfig from './config/multer';
 
@@ -18,10 +20,17 @@ import authMiddleware from './app/middlewares/auth';
 const routes = new Router();
 const upload = multer(multerConfig);
 
+const bruteStore = new BruteRedis({
+  host: process.env.REDIS_HOST,
+  port: process.env.REDIS_PORT,
+});
+
+const bruteForce = new Brute(bruteStore);
+
 // Register
 routes.post('/users', UserController.store);
 // Login - Get Token
-routes.post('/session', SessionController.store);
+routes.post('/session', bruteForce.prevent, SessionController.store);
 
 // No need for authentication
 routes.get('/students/session', StudentSessionController.index);
