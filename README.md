@@ -71,6 +71,11 @@ cd frontend
 yarn
 yarn start
 ```
+Utilizar usuário e senha criados no seed
+
+Usuário: admin@gympoint.com
+
+Senha: 123456
 
 ## **Mobile** (Apenas Android)
 É necessário ter um emulador Android ou um Dispositivo Android conectado à sua máquina.
